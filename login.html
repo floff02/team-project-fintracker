@@ -10,74 +10,48 @@
   <link rel="stylesheet" href="style.css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="wuw.css" rel="stylesheet" type="text/css" />
-
-
 </head>
 
 <body>
-
   <header>
     <h2 class="logo">FinTracker</h2>
     <nav class="navigation">
-    <a href="home.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="subs.html">Subscription</a>
-    <a href="#">Contact Us</a>
-    <a href="login.html">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="subs.html">Subscription</a>
+      <a href="#">Contact Us</a>
+      <a href="login.html">
         <button class="btnLogin-popup">Login</button>
       </a>
       <a href="signup.html">
         <button class="btnLogin-popup">Sign Up</button>
       </a>
-   </nav>
-</header>
+    </nav>
+  </header>
 
-<div class=" container align-items-center">
-    <div class=" justify-content-center align-items-center row d-flex h-100">
-      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-        <div class="card card-body p-5">
-            <h2 class="text-uppercase text-center">Login here</h2>
+  <form class="Form">
+    <h2 class="FormTitle">Login here</h2>
 
+    <div class="FormGroup">
+      <label>Email</label>
+      <input type="email" class="form-control"placeholder="Enter Email">
+    </div>
 
-            <form>
+    <div class="FormGroup">
+      <label>Password</label>
+      <input type="Password" class="form-control" placeholder="Enter Password">
+    </div>
 
-       <div class="form-row">
+    <button type="submit" class="FormButton">Login</button>
 
+    <div class="FormLinks">
+      <p class="Redirect"> Don't Already Have An Account? <a href="signup.html"> Join us here </a></p>
+      <p class="Redirect"> Forgotten your password or username? <a href="password.html"> Click here </a></p>
+    </div>
+  </form>
 
-       <div class="form-group col-md-9">
-         <label>Email</label>
+  <script src="js/bootstrap.js"></script>
+  <script src="script.js"></script>
 
-         <input type="email" class="form-control"placeholder="Enter Email">
-       </div>
-
-       <div class="form-group col-md-7">
-         <label>Password</label>
-         <input type="Password" class="form-control" placeholder=" Enter Password">
-       </div>
-       <br />
-       <button type="submit" class="btn btn-primary"> LOGIN</button>
-       <br />
-       <br />
-
-
-       <p class="text-center text-muted ">Don't Already Have An Account? <a href="signup.html"
-                          class="fw-bold text-body"><u>Join us here</u></a></p>
-
- </form>
-
-
-
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-<script src="js/bootstrap.js"></script>
-<script src="script.js"></script>
-
-</section>
- </body>
+  </body>
+</html>

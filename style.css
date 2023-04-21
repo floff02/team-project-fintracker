@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 
@@ -28,17 +27,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_960_720.jpg') no-repeat;
+  background: url('WebsiteBackground.jpg') no-repeat;
   background-size: cover;
   background-position:center;
-
 }
 
 .logo {
   font-size: 2em;
   color: #fff;
   user-select: none;
-
 }
 
 .navigation a {
@@ -48,7 +45,6 @@ body {
   text-decoration: none;
   font-weight: 500;
   margin-left: 40px;
-
 }
 
 .navigation .btnLogin-popup {
@@ -64,14 +60,11 @@ body {
   font-weight: 500;
   margin-left: 40px;
   transition: .5s;
-
-
 }
 
 .navigation .btnLogin-popup:hover {
   background: #fff;
   color: #162938;
-
 }
 
 
@@ -80,16 +73,68 @@ body {
   font-weight: 700;
   font-style: italic;
   color: goldenrod;
-  
-
-
-
-  
 }
 
-.title{
+.title {
   color:#fff;
-
-
 }
 
+.Form {
+  background-color: white;
+  min-height: 350px;
+  max-width: 700px;
+  width: 60%;
+  padding: 3em;
+  box-shadow: 0em 0em 1em 1.2em black inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FormTitle {
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
+.FormGroup {
+  width: 100%;
+  padding-bottom: 0.5em;
+  display: flex;
+}
+
+.FormGroup label {
+  flex: 1;
+  align-self: flex-start;
+}
+
+.FormGroup input {
+  padding-left: 0.25em;
+  flex: 2;
+  align-self: flex-end;
+}
+
+.FormButton {
+  padding: 0.25em;
+  display: block;
+  margin-top: 0.5em;
+}
+
+.FormLinks {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Redirect {
+  display: flex;
+  align-items: center;
+}
+
+.Redirect a {
+  padding-left: 1em;
+  text-decoration: none;
+}
