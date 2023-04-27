@@ -7,12 +7,9 @@
   <meta name="viewport" content="width=device-width,
   initial-scale=1.0">
   <title>About Us</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="wuw.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/js/all.js">
 </head>
 
 <body>
@@ -20,14 +17,12 @@
   <header>
     <h2 class="logo">FinTracker</h2>
     <nav class="navigation">
-    <a href="home.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="subs.html">Subscription</a>
-    <a href="#">Contact Us</a>
-    <a href="login.html">
+    <a href="about">Home</a>
+    <a href="subs">Subscription</a>
+    <a href="login">
         <button class="btnLogin-popup">Login</button>
       </a>
-      <a href="signup.html">
+      <a href="signup">
         <button class="btnLogin-popup">Sign Up</button>
       </a>
    </nav>

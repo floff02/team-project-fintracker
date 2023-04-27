@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">FinTracker</h2>
+      <nav class="navigation">
+        <a href="about">Home</a>
+        <a href="subs">Subscription</a>
+        <a href="login">
+          <button class="btnLogin-popup">Login</button>
+        </a>
+        <a href="signup">
+          <button class="btnLogin-popup">Sign Up</button>
+        </a>
+      </nav>
+    </header>
+
+    <form class="Form" action="/signup" method="post">
+      <h2 class="FormTitle">Create an account</h2>
+
+      <div class="FormElement">
+        <label> First Name</label>
+        <input name="fname" type="name" class="form-control" placeholder="First name">
+      </div>
+
+      <div class="FormElement">
+        <label>Surname</label>
+        <input name="sname" type="name" class="form-control" placeholder="Surname">
+      </div>
+
+      <div class="FormElement">
+        <label>Email</label>
+        <input name="email" type="email" class="form-control"placeholder="Enter Email">
+      </div>
+
+      <div class="FormElement">
+        <label>Password</label>
+        <input name="password" type="Password" class="form-control" placeholder="Enter Valid Password">
+      </div>
+
+      <button type="submit" class="FormButton">Register</button>
+      <div class="FormLinks">
+        <p class="Redirect"> Already Have An Account? <a href="login"> Login here </a></p>
+      </div>
+    </form>
+
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js')}}"></script>
+
+  </body>
+</html>

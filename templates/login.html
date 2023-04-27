@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h2 class="logo">FinTracker</h2>
+    <nav class="navigation">
+      <a href="about">Home</a>
+      <a href="subs">Subscription</a>
+      <a href="signup">
+        <button class="btnLogin-popup">Sign Up</button>
+      </a>
+    </nav>
+  </header>
+
+  <form class="Form" action="/login" method="post">
+    <h2 class="FormTitle">Login here</h2>
+
+    <div class="FormElement">
+      <label>Email</label>
+      <input name = "email" type="email" class="form-control"placeholder="Enter Email">
+    </div>
+
+    <div class="FormElement">
+      <label>Password</label>
+      <input name = "password" type="Password" class="form-control" placeholder="Enter Password">
+    </div>
+
+    <button href = "fintracker.html" type="submit" class="FormButton">Login</button>
+
+    <div class="FormLinks">
+      <p class="Redirect"> Don't Already Have An Account? <a href="signup"> Join us here </a></p>
+      <p class="Redirect"> Forgotten your password or username? <a href="password.html"> Click here </a></p>
+    </div>
+  </form>
+
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js')}}"></script>
+  </body>
+</html>

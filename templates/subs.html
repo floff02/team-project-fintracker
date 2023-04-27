@@ -7,10 +7,8 @@
   <meta name="viewport" content="width=device-width,
   initial-scale=1.0">
   <title>Subscription Page</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -18,14 +16,12 @@
   <header>
     <h2 class="logo">FinTracker</h2>
     <nav class="navigation">
-    <a href="home.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="subs.html">Subscription</a>
-    <a href="#">Contact Us</a>
-    <a href="login.html">
+    <a href="about">Home</a>
+    <a href="subs">Subscription</a>
+    <a href="login">
         <button class="btnLogin-popup">Login</button>
       </a>
-      <a href="signup.html">
+      <a href="signup">
         <button class="btnLogin-popup">SIGNUP</button>
       </a>
    </nav>
@@ -42,8 +38,9 @@
         <div class="card-body">
           <h5 class="card-title subf">BASIC</h5>
           <p class="card-text">This subscription level offers basic features such as account tracking, expense 
-            categorization, and budgeting tools.<ul> The price start at ONLY £10/month. Get a free 14-days free trial now.</ul></p>
-          <a href="#" class="btn btn-primary">Select £10/month</a>
+            categorization, and budgeting tools. This is the best package for people with lower budgets.<ul> The price start at ONLY £10/ month. Get a free 14-days free trial now.</ul></p>
+            
+          <button href="" class="SubscriptionBtn">Select £10/month</button>
         </div>
       </div>
     </div>
@@ -56,8 +53,8 @@
         <div class="card-body">
           <h5 class="card-title subf">STANDARD</h5>
           <p class="card-text">The standard subscription level offers everything form the basic with additional features such as investment tracking and reporting,
-             as well as more advanced budgeting tools.<ul> The price start at ONLY £25/month. Get a free 14-days free trial now.</ul></p>
-          <a href="#" class="btn btn-primary">Select £25/month</a>
+             as well as more advanced budgeting tools.<ul> The price start at ONLY £25/ month. Get a free 14-days free trial now.</ul></p>
+          <button href="" class="SubscriptionBtn">Select £25/month</button>
         </div>
       </div>
     </div>
@@ -71,8 +68,8 @@
           <h5 class="card-title subf">PREMIUM</h5>
           <p class="card-text">This subscription level offer everything from standard but with even more advanced features such as 
             tax tracking, bill reminders, and financial advice from professionals.
-            <ul> The price start at ONLY £35/month. Get a free 14-days free trial now.</ul></p>
-          <a href="#" class="btn btn-primary">Select £35/month</a>
+            <ul> The price start at ONLY £35/ month. Get a free 14-days free trial now.</ul></p>
+          <button href="" class="SubscriptionBtn">Select £35/month</button>
         </div>
       </div>
     </div>
@@ -85,8 +82,8 @@
           <h5 class="card-title subf">ULTIMATE</h5>
           <p class="card-text">The ultimate subscription leve offers all of the features of the lower tiers, 
             plus personalized financial planning services and access to exclusive investment opportunities.
-            <ul> The price start at ONLY £50/month. Get a free 14-days free trial now.</ul></p>
-          <a href="#" class="btn btn-primary">Select £50/month</a>
+            <ul> The price start at ONLY £50/ month. Get a free 14-days free trial now.</ul></p>
+          <button href="" class="SubscriptionBtn">Select £50/month</button>
         </div>
       </div>
     </div>
@@ -95,8 +92,6 @@
  
 
 
-<script src="js/bootstrap.js"></script>
-<script src="script.js"></script>
-
+<script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js')}}"></script>
 </section>
  </body>

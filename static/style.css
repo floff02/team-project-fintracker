@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -38,13 +36,24 @@ body {
   user-select: none;
 }
 
-.navigation a {
+.navigation a{
   position:relative;
   font-size: 1.1em;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   margin-left: 40px;
+}
+
+.navigation p{
+  display: inline-flex;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.1em;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  padding-inline: 1em;
 }
 
 .navigation .btnLogin-popup {
@@ -94,29 +103,37 @@ body {
 .FormTitle {
   text-transform: uppercase;
   padding-bottom: 0.5em;
+  font-style: italic;
+  color: goldenrod;
 }
 
-.FormGroup {
+.FormElement {
   width: 100%;
   padding-bottom: 0.5em;
   display: flex;
 }
 
-.FormGroup label {
+.FormElement label {
   flex: 1;
   align-self: flex-start;
 }
 
-.FormGroup input {
+.FormElement input {
   padding-left: 0.25em;
   flex: 2;
   align-self: flex-end;
 }
 
 .FormButton {
-  padding: 0.25em;
+  padding: 0.75em;
   display: block;
   margin-top: 0.5em;
+  text-decoration: none;
+  border-radius: 2em;
+  background-color: #6BB2F5;
+}
+.FormButton:hover {
+  background-color: #57C0DE;
 }
 
 .FormLinks {
@@ -137,4 +154,110 @@ body {
 .Redirect a {
   padding-left: 1em;
   text-decoration: none;
+}
+
+.SubscriptionBtn {
+  text-decoration: none;
+  border-radius: 2em;
+  padding: 1em;
+  align-items: center;
+  background-color: #6BB2F5;
+  align-self: flex-end;
+}
+.SubscriptionBtn:hover {
+  background-color: #57C0DE;
+}
+
+.SubscriptionCard{
+  align-items: center;
+}
+
+.card-body .p {
+  padding-left: 0em !important;
+  display: flex;
+}
+.card{
+  min-height: 575.45px;
+  display: flex;
+}
+
+.welcome{
+  color: white;
+}
+.card-text {
+  color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: rgb(255, 255, 255);
+  box-shadow: var(--box-shadow);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.container {
+  color:white;
+  margin: 30px auto;
+  width: 350px;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
 }
